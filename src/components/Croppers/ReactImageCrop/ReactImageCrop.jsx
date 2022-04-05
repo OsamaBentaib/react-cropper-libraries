@@ -10,7 +10,7 @@ const Cropper = ({ showModal, onModalClose, imgURL, onSaveHandler }) => {
 
 	const makeClientCrop = async (crop) => {
 		if ((image, crop.width && crop.height)) {
-			const croppedImg = await getCroppedImg(image, crop, "newFile.jpeg");
+			const croppedImg = await getCroppedImg(image, crop, "file.jpeg");
 			setCroppedImageUrl(croppedImg);
 		}
 	};
